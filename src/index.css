@@ -1,0 +1,160 @@
+*{  /*fonts and margin of the website*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input, button{
+    /*appearance of the buttons*/
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.App{
+    /*main page*/
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #070707;
+    
+}
+
+form{
+    display: block;
+    position: relative;
+}
+
+form::after{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: 1;
+}
+/*design for the form login*/
+form .form-inner{
+    position: relative;
+    display: block;
+    background-color: #ec1313;
+    border-radius: 8px;
+    padding: 30px;
+    z-index: 2;
+    text-align: center;
+    border-radius: 90px;
+}
+
+/*Form login design and layout*/
+form .form-inner h2{
+    color: white;
+    font-size: 90px;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+form .form-inner .form-group{
+    display: block;
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+/*the email and password layout font size*/
+.form-inner .form-group label{ 
+    display: block;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    transition: 0.4s;
+ 
+}
+
+/*login form user and the password*/
+form .form-inner .form-group input{
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    transition: 0.4s;
+   
+
+}
+
+/*For the design of Login*/
+form .form-inner input[type="submit"]
+{
+    display: inline-block;
+    background-image: linear-gradient(to right, #ffffff 50%, #f12222 50%);
+    background-size: 200%;
+    background-position: 0%;
+    
+    font-weight: lighter;
+    color: #191919;
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+
+/*logout and form designs and layout*/
+.logged-in button{
+    display: inline-block;
+    position: relative;
+    bottom: 300px;
+    left: 600px;
+    background-image: linear-gradient(to right, #ffffff 50%, #f12222 50%);
+    background-size: 200%;
+    background-position: 0%;
+    
+    font-weight: lighter;
+    color: #191919;
+    transition: 0.3s;
+    cursor: pointer;
+    padding: 10px 15px;
+    border-radius: 30px;
+}
+/*hove effect in login and logout option*/
+form .form-inner input[type="submit"]:hover, .logged-in button:hover{
+    background-position: 100% 0%;
+}
+
+
+/*The informations forms designs*/
+.logged-in{
+    width: 100%;
+    height: 60%;
+    border-radius: 50px;
+    max-width: 1000px;
+    background: #ec1313;
+    padding: 35px 70px;
+}
+/*Positions of the details*/
+.logged-in h2{
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-left: 460px;
+    position: relative;
+    bottom: 360px;
+}
+
+/*Answer layout and design*/
+.logged-in h2 span{
+    color: #fde400;
+    font-weight: 700;
+}
+
+.logo{
+    /*image design and positioning*/
+    margin-top: 10px;
+    width: 425px;
+    border-radius: 50px;
+}
